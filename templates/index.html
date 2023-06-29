@@ -1,0 +1,663 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+{% if messages %}
+    {% for message in messages %}
+    <div class="alert alert-success  alert-dismissible fade show" role="alert">
+        <strong>{{message}}
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    {% endfor %}
+{% endif %}
+
+
+{% include 'base/navbar.html' %}
+
+
+
+
+        <!-- Start Sldier Area  -->
+        <div class="slider-area banner-style-2 bg-image d-flex align-items-center">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 col-md-12">
+                        <div class="inner">
+                            <div class="content">
+                                <span class="pre-title" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">LEGACY OF EXCELLENCE</span>
+                                <h1 class="title" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
+                                    Apply to Srinivas<br>University Today</h1>
+                                <p class="description" data-sal-delay="250" data-sal="slide-up" data-sal-duration="800">
+                                    Emphasizes the university's tradition of excellence  <br /> and invites potential students to become a part of it.</p>
+                                <div class="read-more-btn" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
+                                    <a class="edu-btn" href="https://www.suiet.in">Explore SUIET <i class="icon-arrow-right-line-right"></i></a>
+                                </div>
+                                <div class="arrow-sign d-lg-block d-none">
+                                    <img src="{% static 'assets/images/banner/banner-02/arrow.png' %}" alt="Banner Images" data-sal-delay="150" data-sal="fade" data-sal-duration="800">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 d-none d-sm-none d-md-block">
+                        <div class="banner-thumbnail">
+                            <img class="girl-thumb" style="height: 700px; width: 700px" src="{% static 'assets\images\SUIET MAIN Banner Home 1.png' %}" alt="Girl Images" data-sal-delay="150" data-sal="fade" data-sal-duration="800" />
+                        </div>
+                        <div class="banner-bg d-lg-block d-none">
+                            <img class="girl-bg" src="{% static 'assets/images/banner/banner-02/girl-bg.png' %}" alt="Girl Background" data-sal-delay="150" data-sal="fade" data-sal-duration="800" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
+                    <div class="shape-image shape-image-1">
+                        <img src="{% static 'assets/images/shapes/shape-19.png' %}" alt="Shape Thumb" />
+                    </div>
+                    <div class="shape-image shape-image-2">
+                        <img src="{% static 'assets/images/shapes/shape-05-01.png' %}" alt="Shape Thumb" />
+                    </div>
+                    <div class="shape-image shape-image-3">
+                        <img src="{% static 'assets/images/shapes/shape-19-01.png' %}" alt="Shape Thumb" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Sldier Area  -->
+
+
+<!-- Start Card Section -->
+<div class="eduvibe-home-five-cats edu-about-area about-style-5 edu-section-gapTop bg-color-white">
+    <div class="container eduvibe-animated-shape">
+        <div class="row g-5">
+            <div class="col-lg-12">
+                <div class="section-title" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                    <span class="pre-title">MORE AT SRINIVAS UNIVERSITY</span>
+                    <h3 class="title">Our<span style="color: #FB7C56;"> Departments </span> </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-12 mt--60 mb_dec--20 slick-activation-wrapper service-activation-item5 edu-slick-arrow-top">
+                <!-- Start Single Service  -->
+                <div class="single-slick-card">
+                    <div class="service-card service-card-8 shape-bg-1">
+                        <div class="inner">
+                            <div class="icon">
+                                <a href="https://www.suiet.in/department/department-of-computer-science-and-engineering">
+                                    <img src="{% static 'assets\images\dept icons\CSE.png' %}" alt="Icons">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h6 class="title"><a href="https://www.suiet.in/department/department-of-computer-science-and-engineering">CSE</a></h6>
+                            </div>
+                            <div class="hover-action">
+                                <a class="read-more-btn" href="https://www.suiet.in/department/department-of-computer-science-and-engineering"><i class="icon-arrow-right-line-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Service  -->
+
+                <!-- Start Single Service  -->
+                <div class="single-slick-card">
+                    <div class="service-card service-card-8 shape-bg-2">
+                        <div class="inner">
+                            <div class="icon">
+                                <a href="https://www.suiet.in/department/department-of-artificial-intelligence-machine-learning">
+                                    <img src="{% static 'assets\images\dept icons\aiml.png' %}" alt="Icons">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h6 class="title"><a href="https://www.suiet.in/department/department-of-artificial-intelligence-machine-learning">AI & ML</a></h6>
+                            </div>
+                            <div class="hover-action">
+                                <a class="read-more-btn" href="https://www.suiet.in/department/department-of-artificial-intelligence-machine-learning"><i class="icon-arrow-right-line-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Service  -->
+
+                <!-- Start Single Service  -->
+                <div class="single-slick-card">
+                    <div class="service-card service-card-8 shape-bg-3">
+                        <div class="inner">
+                            <div class="icon">
+                                <a href="https://www.suiet.in/department/department-of-cyber-security-and-cyber-forensic">
+                                    <img src="{% static 'assets\images\dept icons\cyber-security.png' %}" alt="Icons">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h6 class="title"><a href="https://www.suiet.in/department/department-of-cyber-security-and-cyber-forensic">Cyber Security</a></h6>
+                            </div>
+                            <div class="hover-action">
+                                <a class="read-more-btn" href="https://www.suiet.in/department/department-of-cyber-security-and-cyber-forensic"><i class="icon-arrow-right-line-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Service  -->
+
+                <!-- Start Single Service  -->
+                <div class="single-slick-card">
+                    <div class="service-card service-card-8 shape-bg-5">
+                        <div class="inner">
+                            <div class="icon">
+                                <a href="https://www.suiet.in/department/department-of-electronics-and-communication-engineering">
+                                    <img src="{% static 'assets\images\dept icons\E&C.png' %}" alt="Icons">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h6 class="title"><a href="https://www.suiet.in/department/department-of-electronics-and-communication-engineering">E&C</a></h6>
+                            </div>
+                            <div class="hover-action">
+                                <a class="read-more-btn" href="https://www.suiet.in/department/department-of-electronics-and-communication-engineering"><i class="icon-arrow-right-line-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Service  -->
+
+                <!-- Start Single Service  -->
+                <div class="single-slick-card">
+                    <div class="service-card service-card-8 shape-bg-3">
+                        <div class="inner">
+                            <div class="icon">
+                                <a href="https://www.suiet.in/department/department-of-mechanical-engineering">
+                                    <img src="{% static 'assets\images\dept icons\mech-engineering.png' %}" alt="Icons">
+                                </a>
+                            </div>
+                            <div class="content">
+                                <h6 class="title"><a href="https://www.suiet.in/department/department-of-mechanical-engineering">Mechanical</a></h6>
+                            </div>
+                            <div class="hover-action">
+                                <a class="read-more-btn" href="https://www.suiet.in/department/department-of-mechanical-engineering"><i class="icon-arrow-right-line-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Single Service  -->
+            </div>
+        </div>
+
+        <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
+            <div class="shape-image shape-image-1">
+                <img src="{% static 'assets/images/shapes/shape-07.png' %}" alt="Shape Thumb" />
+            </div>
+            <div class="shape-image shape-image-2">
+                <img src="{% static 'assets/images/shapes/shape-03-05.png' %}" alt="Shape Thumb" />
+            </div>
+            <div class="shape-image shape-image-3">
+                <img src="{% static 'assets/images/shapes/shape-04-06.png' %}" alt="Shape Thumb" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End card Section -->
+
+
+<!-- Start Accordion Area  -->
+<div class="edu-accordion-area eduvibe-home-three-accordion accordion-shape-1 edu-section-gap bg-color-white">
+    <div class="container eduvibe-animated-shape">
+        <div class="row g-5">
+            <div class="col-lg-6 gallery-wrapper">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="thumbnail" data-sal-delay="150" data-sal="fade" data-sal-duration="800">
+                            <img class="radius-small w-100" src="https://www.suiet.in/static/assets/images/about%20institute/su3.JPG" syyle="height: 530px" alt="Shape Images">
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 mt--35 mt_sm--15">
+                        <div class="thumbnail" data-sal-delay="150" data-sal="fade" data-sal-duration="800">
+                            <img class="radius-small w-100" src="https://www.suiet.in/static/assets/images/about%20institute/su4.JPG" alt="Shape Images">
+                        </div>
+                        <div class="thumbnail mt--15" data-sal-delay="150" data-sal="fade" data-sal-duration="800">
+                            <img class="radius-small w-100" src="https://www.suiet.in/static/assets/images/about%20institute/suiet3.jpg" alt="Shape Images">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="accordion-style-1">
+                    <div class="section-title text-start mb--40" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <span class="pre-title">About Us</span>
+                        <h3 class="title">Discover the Srinivas University Advantage</h3>
+                    </div>
+
+                    <div class="edu-accordion edu-accordion-01" id="accordionExample1" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <div class="edu-accordion-item">
+                            <div class="edu-accordion-header" id="headingOne">
+                                <button class="edu-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What sets Srinivas University apart in terms of education?
+                                </button>
+                            </div>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
+                                <div class="edu-accordion-body">
+                                    Srinivas University offers a world-class education facilitated by experienced faculty who employ innovative teaching methods to ensure an exceptional learning experience.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edu-accordion-item">
+                            <div class="edu-accordion-header" id="headingTwo">
+                                <button class="edu-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    What programs are available at Srinivas University?
+                                </button>
+                            </div>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample1">
+                                <div class="edu-accordion-body">
+                                    Srinivas University provides a diverse range of programs in engineering, management, humanities, and science, offering students a wide array of academic opportunities to choose from.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edu-accordion-item">
+                            <div class="edu-accordion-header" id="headingThree">
+                                <button class="edu-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    How does SUIET support students career goals?
+                                </button>
+                            </div>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample1">
+                                <div class="edu-accordion-body">
+                                    Srinivas University follows a career-focused curriculum that is designed to provide students with the necessary knowledge and skills for their chosen fields. With personalized attention and mentoring, students receive guidance and support to help them achieve their career aspirations.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="edu-accordion-item">
+                            <div class="edu-accordion-header" id="headingFour">
+                                <button class="edu-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                    What is the campus life like at Srinivas University?
+                                </button>
+                            </div>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample1">
+                                <div class="edu-accordion-body">
+                                    Srinivas University boasts a vibrant campus life, offering a plethora of extracurricular activities, clubs, and societies. Students can engage in various interests outside of academics, fostering a well-rounded and enriching college experience.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shape-dot-wrapper shape-wrapper d-xl-block d-none">
+            <div class="shape shape-1"><span class="shape-dot"></span></div>
+            <div class="shape-image shape-image-2">
+                <img src="{% static 'assets/images/shapes/shape-11-04.png' %}" alt="Shape Thumb" />
+            </div>
+            <div class="shape-image shape-image-3">
+                <img src="{% static 'assets/images/shapes/shape-25-01.png' %}" alt="Shape Thumb" />
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Accordion Area  -->
+
+
+
+<div class="login-register-page-wrapper bg-color-white" id="applynow">
+    <div class="container checkout-page-style text-center " >
+        <div class="row g-5">
+            
+            <div class="col-lg-12">
+                <div class="login-form-box">
+                    <h3 class="mb-30">Admission Enquiry 2023 - 24</h3>
+                    <br>
+                    <form class="login-form" method="post">
+                        {% csrf_token %}
+
+                        <div class="input-box mb--30">
+                            <input type="text" placeholder="Full Name" name="name" required />
+                        </div>
+                        <div class="input-box mb--30">
+                            <input type="text" placeholder="Phone Number" name="PhoneNumber" required/>
+                        </div>
+                        
+                        <div class="input-box mb--30">
+                            <input type="email" placeholder="Email"  name="Email" required/>
+                        </div>
+                        <div class="input-box mb--30">
+                            <input type="text" placeholder="State"  name="State" required/>
+                        </div>
+                        <div class="input-box mb--20">
+                            <select name="course">
+                                <option value="">Select Course</option>
+                                <option value="B.Tech Computer Science and Engineering">B.Tech Computer Science and Engineering</option>
+                                <option value="B.Tech. Artificial Intelligence and Machine Learning">B.Tech. Artificial Intelligence and Machine Learning</option>
+                                <option value="B.Tech. Cyber Security">B.Tech. Cyber Security</option>
+                                <option value="B.Tech. Electronics and Comm. Engineering">B.Tech. Electronics and Comm. Engineering</option>
+                                <option value="B.Tech. Mechanical Engineering">B.Tech. Mechanical Engineering</option>
+                                <option value="B.Tech. Civil Engineering">B.Tech. Civil Engineering</option>
+                                <option value="M.Tech. Computer Science">M.Tech. Computer Science</option>
+                                <option value="M.Tech. Civil Engineering">M.Tech. Civil Engineering</option>
+                                <option value="M.Tech. Mechanical Engineering">M.Tech. Mechanical Engineering</option>
+                            </select>
+                        </div>
+
+                        <br>
+                        <button class="rn-btn edu-btn w-100 mb--30" type="submit">
+                            <span>Register</span>
+                        </button>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- Start Accordion Area  -->
+<div class="edu-accordion-area eduvibe-faq-page accordion-shape-1 edu-section-gap bg-color-white">
+    <div class="wrapper">
+        <div class="container eduvibe-animated-shape">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
+                        <span class="pre-title">FaQ Questions</span>
+                        <h3 class="title">Online Application 2023-24:<br />Registration for Srinivas Universit</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-12">
+                <ul class="edu-tab-nav nav nav-tabs mt--40" id="eduTab" role="tablist">
+
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="edutabtwo-tab" data-bs-toggle="tab" data-bs-target="#edutabtwo" type="button" role="tab" aria-controls="edutabtwo" aria-selected="false">Admission Process</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-content" id="eduTabContent">
+
+
+                <div class="tab-pane fade show active" id="edutabtwo" role="tabpanel" aria-labelledby="edutabtwo-tab">
+                    <div class="row g-5 align-items-center mt--20">
+                        <div class="col-lg-6">
+                            <div class="accordion-style-1">
+                                <div class="edu-accordion" id="accordionExample1">
+
+
+
+                                    <div class="edu-accordion-item">
+                                        <div class="edu-accordion-header" id="headingOne">
+                                            <button class="edu-accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                How do I register for Srinivas University?
+                                            </button>
+                                        </div>
+                                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample1">
+                                            <div class="edu-accordion-body">
+                                                The registration process for Srinivas University begins by filling out the online application form available on our website. Please ensure all the required fields are accurately completed.
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="edu-accordion-item">
+                                        <div class="edu-accordion-header" id="headingTwo">
+                                            <button class="edu-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                How can I make the reservation payment of Rs. 30,000/-?
+                                            </button>
+                                        </div>
+                                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample1">
+                                            <div class="edu-accordion-body">
+                                                Yes, there is a reservation fee of Rs. 30,000/- to be paid during the registration process. This amount will be considered as part of the first-year fee.
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="edu-accordion-item">
+                                        <div class="edu-accordion-header" id="headingThree">
+                                            <button class="edu-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
+                                                Is there a reservation fee for registration? How do I pay it?
+                                            </button>
+                                        </div>
+                                        <div id="collapseseven" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample1">
+                                            <div class="edu-accordion-body">
+                                                Yes, there is a reservation fee of Rs. 30,000/- to be paid during the registration process. This amount will be considered as part of the first-year fee.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="accordion-style-1">
+                                <div class="edu-accordion" id="accordionExample2">
+                                    <div class="edu-accordion-item">
+                                        <div class="edu-accordion-header" id="headingFour">
+                                            <button class="edu-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                                What documents do I need to submit for registration?
+                                            </button>
+                                        </div>
+                                        <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingFour" data-bs-parent="#accordionExample1">
+                                            <div class="edu-accordion-body">
+                                                Along with the online application form and payment confirmation, you will be required to submit the necessary documents as specified in the registration guidelines. These documents may include academic transcripts, identification proof, and any additional documents as per the chosen program.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="edu-accordion-item">
+                                        <div class="edu-accordion-header" id="headingFive">
+                                            <button class="edu-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                                Whom do I contact for admission-related queries?
+                                            </button>
+                                        </div>
+                                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample1">
+                                            <div class="edu-accordion-body">
+                                                For any payment-related or admission-related queries, please feel free to contact Mrs. Rajalakshmi, the Admission Officer at Srinivas University. You can reach her at +91 7026436197 or email your queries to admission@srinivasuniversity.edu.in.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="edu-accordion-item">
+                                        <div class="edu-accordion-header" id="headingSix">
+                                            <button class="edu-accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                                What documents required for admission under CET quota?
+                                            </button>
+                                        </div>
+                                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample1">
+                                            <div class="edu-accordion-body">
+                                                For admission under CET quota, the following documents are required:
+                                                4 copies of each document, 
+                                                CET admission order, 
+                                                SSLC marks card, 
+                                                PUC marks card, 
+                                                Transfer & conduct certificate, 
+                                                Certificate - 7 years, 
+                                                Caste/income certificate, 
+                                                PUC marks card.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!-- End Accordion Area  -->
+
+
+
+
+
+<!-- Companies carousel Start -->
+
+<section class="mt-4 container ftco-animate">
+    <div class="col-lg-12 text-center" id="Excellency">
+      <h3 class="section-title">Our Top Recruiters</h3>
+    </div>
+    <style>
+      .carousel {
+        overflow: hidden;
+        width: 100%;
+      }
+
+      .carousel-container {
+        display: flex;
+        width: 400%; /* 4 images, each taking up 100% of the width */
+        animation: scroll 20s infinite linear; /* scroll for 20 seconds and repeat infinitely */
+        animation-delay: 2s; /* delay animation by 2 seconds for a more attractive effect */
+      }
+
+      .carousel-container img {
+        height: 200px;
+        width: 200px; /* each image takes up 1/4 of the container */
+        margin-right: 20px; /* add space between the images */
+        object-fit: cover; /* scale images to fit their containers */
+        transition: transform 0.5s ease-out; /* add a smooth transition effect when images change */
+      }
+
+      .carousel-container img:last-of-type {
+        margin-right: 0; /* remove right margin from last image */
+      }
+      .carousel-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0; /* hide the overlay by default */
+        background-color: rgba(0, 0, 0, 0.5); /* add a semi-transparent background */
+        transition: opacity 0.5s ease-out; /* add a smooth transition effect */
+      }
+      .carousel:hover .carousel-overlay {
+        opacity: 1; /* show the overlay when the mouse hovers over the carousel */
+      }
+
+      @keyframes scroll {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-10%); /* move container 3x the width of one image */
+        }
+      }
+
+    </style>
+    <script>
+      const carousel = document.querySelector('.carousel');
+  const container = document.querySelector('.carousel-container');
+
+  carousel.addEventListener('mouseover', () => {
+    container.style.animationPlayState = 'paused'; /* pause the animation */
+  });
+
+  carousel.addEventListener('mouseout', () => {
+    container.style.animationPlayState = 'running'; /* resume the animation */
+  });
+    </script>
+    <div class="carousel ftco-animate">
+      <div class="carousel-container">
+        <img src="https://i.ibb.co/M9t5jbR/1.png'">
+        <img src="https://i.ibb.co/vDVnLqb/2.png'">
+        <img src="https://i.ibb.co/VgMMGsg/3.png'">
+        <img src="https://i.ibb.co/3pnHkRK/4.png'">
+        <img src="https://i.ibb.co/61R5p8T/5.png'">
+        <img src="https://i.ibb.co/HKYyKvL/6.png'">
+        <img src="https://i.ibb.co/wdDGY9Q/7.png'">
+        <img src="https://i.ibb.co/wYFxPsm/9.png'">
+        <img src="https://i.ibb.co/vY3nChh/8.png'">
+        <img src="https://i.ibb.co/Z1YKG46/10.png'">
+      </div>
+    </div>
+
+<div class="col-lg-12 text-center" id="Credibility">
+  <h3 class="section-title">Our Accreditations & MOU's</h3>
+</div>
+  <br>
+  <style>
+    .carousel {
+      overflow: hidden;
+      width: 100%;
+    }
+
+    .carousel-container {
+      display: flex;
+      width: 400%; /* 4 images, each taking up 100% of the width */
+      animation: scroll 20s infinite linear; /* scroll for 20 seconds and repeat infinitely */
+      animation-delay: 2s; /* delay animation by 2 seconds for a more attractive effect */
+    }
+
+    .carousel-container img {
+      height: 200px;
+      width: 200px; /* each image takes up 1/4 of the container */
+      margin-right: 20px; /* add space between the images */
+      object-fit: cover; /* scale images to fit their containers */
+      transition: transform 0.5s ease-out; /* add a smooth transition effect when images change */
+    }
+
+    .carousel-container img:last-of-type {
+      margin-right: 0; /* remove right margin from last image */
+    }
+    .carousel-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0; /* hide the overlay by default */
+      background-color: rgba(0, 0, 0, 0.5); /* add a semi-transparent background */
+      transition: opacity 0.5s ease-out; /* add a smooth transition effect */
+    }
+    .carousel:hover .carousel-overlay {
+      opacity: 1; /* show the overlay when the mouse hovers over the carousel */
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-10%); /* move container 3x the width of one image */
+      }
+    }
+
+  </style>
+  <script>
+    const carousel = document.querySelector('.carousel');
+const container = document.querySelector('.carousel-container');
+
+carousel.addEventListener('mouseover', () => {
+  container.style.animationPlayState = 'paused'; /* pause the animation */
+});
+
+carousel.addEventListener('mouseout', () => {
+  container.style.animationPlayState = 'running'; /* resume the animation */
+});
+  </script>
+  <div class="carousel ftco-animate">
+    <div class="carousel-container">
+      <img src="https://i.ibb.co/KKmqZbx/11.png'">
+      <img src="https://i.ibb.co/GCZ9KbQ/12.png'">
+      <img src="https://i.ibb.co/nf9nJ1R/13.png'">
+      <img src="https://i.ibb.co/G96NcfF/14.png'">
+      <img src="https://i.ibb.co/cxG5hbW/15.png'">
+      <img src="https://i.ibb.co/9bDSgqT/16.png'">
+      <img src="https://i.ibb.co/bHKdkwD/17.png'">
+      <img src="https://i.ibb.co/HF4ntZf/18.png'">
+      <img src="https://i.ibb.co/127VV7t/19.png'">
+      <img src="https://i.ibb.co/nzthZ3d/20.png'">
+      <img src="https://i.ibb.co/VpDNk1t/21.png'">
+      <img src="https://i.ibb.co/6F4SXPk/22.png'">
+      <img src="https://i.ibb.co/jhHWFZG/23.png'">
+    </div>
+  </div>
+
+</section>
+
+<!-- End Carousel  -->
+
+{% include 'base/footer.html' %}
+
+{% endblock content %}
